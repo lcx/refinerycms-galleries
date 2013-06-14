@@ -6,7 +6,7 @@ module Refinery
       config.after_initialize do
         Refinery::Plugin.register do |plugin|
           plugin.name = "galleries"
-          plugin.menu_match = /^\/?(admin|refinery)\/(gallery\_entries|galleries)/
+          plugin.menu_match = /^\/?(admin|refinery)\/(sponsors|gallery\_entries|galleries)/
           plugin.activity = {:class => Gallery,
             :title => 'name'
           }
